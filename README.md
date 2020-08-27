@@ -16,6 +16,9 @@ React project using Material-UI library.
 ## Author
 Luis Alejandro Jaramillo R.
 
+## Credenciales para ingresar
+* Email:luis
+* Pwd:123
 
 ## Part 1: Create a Login Component
 1. Clone the repository, install and run the project to verify that it works:
