@@ -14,20 +14,23 @@ class App extends Component {
     constructor(props){
         super(props);
         const LoginView = () => (
-            <Login/>
+            <Login />
         );
         const TodoAppView = () => (
-            <TodoApp/>
+            <TodoApp />
         );
-        this.state = {loginView: LoginView,todoAppView: TodoAppView,isLoggedIn:true}   
+        this.state = {loginView: LoginView,todoAppView: TodoAppView,isLoggedIn:false}   
+        //Save data
+        localStorage.setItem('email', "luis");
+        localStorage.setItem('password', "123");
+        
     }
-
+    
     render() {
         const LoginView = this.state.loginView;
         const TodoAppView = this.state.todoAppView;
-        const isLoggedIn = this.state.isLoggedIn;
         let validado;
-        if(isLoggedIn){
+        if(localStorage.getItem("isLoggedIn")){
             validado = (
                 <div>
                     <ul>
